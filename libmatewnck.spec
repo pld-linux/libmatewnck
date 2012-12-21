@@ -26,6 +26,7 @@ Window navigator construction Kit for MATE Desktop
 
 %package devel
 Summary:	Development libraries and headers for libmatewnck
+Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
