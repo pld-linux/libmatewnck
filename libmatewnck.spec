@@ -12,6 +12,8 @@ Source0:	http://pub.mate-desktop.org/releases/1.5/%{name}-%{version}.tar.xz
 # Source0-md5:	0ab7beab37cd27b3b9624e31ea2716ad
 URL:		http://wiki.mate-desktop.org/roadmap:transition_to_libmatewnck
 BuildRequires:	cairo-gobject-devel
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	gettext-devel
 BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk+2-devel
 %{?with_apidocs:BuildRequires:	gtk-doc >= 1.9}
