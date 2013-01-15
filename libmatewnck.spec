@@ -6,20 +6,20 @@ Summary:	MATE Desktop Window Navigator Construction Kit libraries
 Name:		libmatewnck
 Version:	1.5.0
 Release:	1
-License:	LGPLv2+ and GPLv2+
+License:	LGPL v2+ and GPL v2+
 Group:		Libraries
-URL:		http://www.mate-desktop.org
 Source0:	http://pub.mate-desktop.org/releases/1.5/%{name}-%{version}.tar.xz
 # Source0-md5:	0ab7beab37cd27b3b9624e31ea2716ad
+URL:		http://wiki.mate-desktop.org/roadmap:transition_to_libmatewnck
+BuildRequires:	cairo-gobject-devel
+BuildRequires:	gobject-introspection-devel
+BuildRequires:	gtk+2-devel
 %{?with_apidocs:BuildRequires:	gtk-doc >= 1.9}
 BuildRequires:	mate-common
-BuildRequires:	pkgconfig(cairo-gobject)
-BuildRequires:	pkgconfig(gobject-introspection-1.0)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(libstartup-notification-1.0)
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xres)
+BuildRequires:	startup-notification-devel
 BuildRequires:	tar >= 1:1.22
+BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-lib-libXres-devel
 BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
