@@ -16,6 +16,7 @@ BuildRequires:	gobject-introspection-devel
 BuildRequires:	gtk+2-devel
 %{?with_apidocs:BuildRequires:	gtk-doc >= 1.9}
 BuildRequires:	mate-common
+BuildRequires:	pkgconfig >= 0.14.0
 BuildRequires:	startup-notification-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libX11-devel
