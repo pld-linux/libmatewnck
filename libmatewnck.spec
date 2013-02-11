@@ -4,12 +4,12 @@
 
 Summary:	MATE Desktop Window Navigator Construction Kit libraries
 Name:		libmatewnck
-Version:	1.5.0
+Version:	1.5.1
 Release:	1
 License:	LGPL v2+ and GPL v2+
 Group:		Libraries
 Source0:	http://pub.mate-desktop.org/releases/1.5/%{name}-%{version}.tar.xz
-# Source0-md5:	0ab7beab37cd27b3b9624e31ea2716ad
+# Source0-md5:	bf564d92d988ea699453b101fb4ccb4a
 URL:		http://wiki.mate-desktop.org/roadmap:transition_to_libmatewnck
 BuildRequires:	cairo-gobject-devel
 BuildRequires:	docbook-dtd412-xml
@@ -55,12 +55,10 @@ Dokumentacja API libmatewnck.
 %build
 NOCONFIGURE=1 ./autogen.sh
 %configure \
+	--disable-silent-rules \
 	%{__enable_disable apidocs gtk-doc} \
 	--with-html-dir=%{_gtkdocdir} \
 	--disable-static \
-
-%{__make} \
-	V=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
