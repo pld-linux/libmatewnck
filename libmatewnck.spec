@@ -13,7 +13,7 @@ Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
 # Source0-md5:	30c96e0120b0c709b417d787b2aa3033
 URL:		http://wiki.mate-desktop.org/roadmap:transition_to_libmatewnck
 BuildRequires:	docbook-dtd412-xml
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.16.0
 BuildRequires:	gobject-introspection-devel >= 0.6.14
 BuildRequires:	gtk+2-devel >= 2:2.19.7
